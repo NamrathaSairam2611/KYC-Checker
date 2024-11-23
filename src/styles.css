@@ -1,0 +1,132 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f9fa; /* Light grey background */
+  color: #333;
+}
+
+.container {
+  background: #ffffff; /* White box */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  width: 90%; /* Adjust width for mobile */
+  max-width: 600px;
+  margin: 20px; /* Ensure margin for spacing */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2575fc;
+}
+
+form div {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[type="file"] {
+  padding: 0.5rem;
+}
+
+/* styles.css */
+
+/* Container for Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between; /* Ensure buttons are side-by-side */
+  gap: 10px; /* Add spacing between buttons */
+  margin-top: 1rem; /* Add spacing above buttons */
+}
+
+.buttons button {
+  flex: 1; /* Ensure buttons take equal width */
+  padding: 0.8rem;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+.buttons button:hover {
+  background: #1d63d3;
+}
+
+.buttons button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.alert {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background: #2575fc;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.buttons button {
+  flex: 1;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}
