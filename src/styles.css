@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,19 +6,19 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #f8f9fa; /* Light grey background */
+  background: #f8f9fa;
   color: #333;
 }
 
 .container {
-  background: #ffffff; /* White box */
+  background: #ffffff;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 1px solid #ccc;
-  width: 90%; /* Adjust width for mobile */
+  width: 90%;
   max-width: 600px;
-  margin: 20px; /* Ensure margin for spacing */
+  margin: 20px;
 }
 
 h2 {
@@ -29,9 +27,9 @@ h2 {
   color: #2575fc;
 }
 
-form div {
+/* form div {
   margin-bottom: 1.5rem;
-}
+} */
 
 label {
   display: block;
@@ -53,18 +51,18 @@ input[type="file"] {
   padding: 0.5rem;
 }
 
-/* styles.css */
-
-/* Container for Buttons */
 .buttons {
   display: flex;
-  justify-content: space-between; /* Ensure buttons are side-by-side */
-  gap: 10px; /* Add spacing between buttons */
-  margin-top: 1rem; /* Add spacing above buttons */
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.date-pick .react-datepicker__input-container {
+  width: 205% !important;
 }
 
 .buttons button {
-  flex: 1; /* Ensure buttons take equal width */
+  flex: 1;
   padding: 0.8rem;
   background: #2575fc;
   color: white;
@@ -118,7 +116,6 @@ input[type="file"] {
   flex: 1;
 }
 
-/* Responsive design */
 @media (max-width: 600px) {
   .container {
     padding: 1rem;
@@ -129,4 +126,15 @@ input[type="file"] {
     font-size: 0.9rem;
     padding: 0.7rem;
   }
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+.alert {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
 }

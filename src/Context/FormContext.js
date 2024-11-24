@@ -13,6 +13,7 @@ export const FormProvider = ({ children }) => {
   });
 
   const [completedSteps, setCompletedSteps] = useState([]);
+  const [currentStep, setCurrentStep] = useState(1);
 
   const updateFormData = (field, value) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -31,6 +32,8 @@ export const FormProvider = ({ children }) => {
         updateFormData,
         completedSteps,
         markStepComplete,
+        currentStep,
+        setCurrentStep,
       }}
     >
       {children}
