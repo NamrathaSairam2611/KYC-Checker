@@ -57,14 +57,16 @@ input[type="file"] {
   margin-top: 1rem;
 }
 
+.date-pick .react-datepicker__input-container {
+  width: auto;
+  max-width: none !important;
+  transform: none;
+}
+
 @media (max-width: 600px) {
   .date-pick .react-datepicker__input-container {
     width: 100% !important;
   }
-}
-
-.date-pick .react-datepicker__input-container {
-  width: 205% !important;
 }
 
 .buttons button {
